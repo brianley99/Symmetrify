@@ -195,11 +195,22 @@ function getValues() {
     //Get Inputs From DOM
     let userString = document.getElementById('userString').value;
 
-    //Check if its a pallindrome
-    let palindromeBool = isPallindrome(userString);
+    //Validate Input
+    if (userString.replace(" ", "") == "") {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Enter some text',
+        })
+    } else {
+        //Input succesfully validated
 
-    //Display result on page
-    displayResult(userString, palindromeBool);
+        //Check if its a pallindrome
+        let palindromeBool = isPallindrome(userString);
+
+        //Display result on page
+        displayResult(userString, palindromeBool);
+    };
 }
                 </code></pre>
             </div>
