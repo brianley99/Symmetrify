@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-scale=false">
-    <title> APP NAME: A Coding Challange by Brian Ley</title>
+    <title> Symmetrify: A Coding Challange by Brian Ley</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/img/Favicon/favicon.ico" type="image/x-icon" />
@@ -37,11 +37,11 @@
             <div class="container-xxl">
                 <a class="navbar-brand" href="index.html">
                     <img src="/img/Logos/logo.svg" height="50px" />
-                    APP NAME
+                    Symmetrify
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-bl">
                         <i class="bi bi-list"></i>
                     </span>
@@ -58,8 +58,7 @@
                             <a class="nav-link" href="/code.html">The Code</a>
                         </li>
                         <li class="nav-item">
-                            <!-- UPDATE REPO LINK-->
-                            <a class="nav-link" href="https://github.com/brianley99" target="_blank">Repo</a>
+                            <a class="nav-link" href="https://github.com/brianley99/Symmetrify" target="_blank">Repo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://bley-portfolio.netlify.app/" target="_blank">About</a>
@@ -75,9 +74,10 @@
     </header>
 
     <main class="container my-3">
-        <h1>App UI Goes Here</h1>
-        <input id="message" type="text" placeholder="Enter a Message">
-        <button id="btnSubmit" class="btn btn-primary">Display Message</button>
+        <h1>Enter a word to check if pallindrome</h1>
+        <input id="userString" type="text" value="Enter a Phrase">
+        <button onclick="getValues()" class="btn btn-primary">Display Message</button>
+        <h2 id="results"></h2>
     </main>
 
     <footer class="container-fluid mt-3 footer-main">
@@ -102,7 +102,7 @@
                 </div>
             </div>
         </div>
-    
+
     </footer>
 
     <!-- Bootstrap JS-->
@@ -115,9 +115,6 @@
 
     <!-- App JS-->
     <script src="/js/site.js"></script>
-    <script>
-        document.getElementById('btnSubmit').addEventListener('click', displayMessage);
-    </script>
 
 </body>
 
