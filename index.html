@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-scale=false">
-    <title> Symmetrify: A Coding Challange by Brian Ley</title>
+    <title> Symmetrify : A Coding Challange by Brian Ley</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/Favicon/favicon.ico" type="image/x-icon" />
 
     <!-- Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,15 +26,15 @@
     <!-- Dev Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
+    <!-- Prism CSS-->
+    <link rel="stylesheet" href="/css/prism.css" />
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/css/site.css" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="/img/Favicon/favicon.ico" type="image/x-icon" />
-
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#mainNav">
 
     <header>
         <nav id="mainNav" class="navbar navbar-expand-lg fixed-top navbar-dark">
@@ -50,17 +53,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/app.html">The App</a>
+                            <a class="nav-link" href="#app">The App</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/code.html">The Code</a>
+                            <a class="nav-link" href="#code">The Code</a>
                         </li>
                         <li class="nav-item">
-                            <!-- UPDATE REPO LINK-->
-                            <a class="nav-link" href="https://github.com/brianley99" target="_blank">Repo</a>
+                            <a class="nav-link" href="https://github.com/brianley99/Symmetrify" target="_blank">Repo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://bley-portfolio.netlify.app/" target="_blank">About</a>
@@ -75,46 +77,187 @@
         </nav>
     </header>
 
-    <main class="container my-3">
-        <div class="row row-cols-1 row-cols-md-2 g-3 h-100 align-items-center py-3">
-            <div class="col">
-                <h1 class="display-3">Symmetrify: Coding Challange</h1>
-                <p class="lead">A project descripton</p>
-                <ul class="checklist">
-                    <li>
-                        <i class="bi bi-check-square-fill"></i>
-                        <span>CSS & Bootstrap Layout</span>
-                    </li>
-                    <li>
-                        <i class="bi bi-check-square-fill"></i>
-                        <span>JavaScript Fundamentals</span>
-                    </li>
-                    <li>
-                        <i class="bi bi-check-square-fill"></i>
-                        <span>JavaScript Loops</span>
-                    </li>
-                    <li>
-                        <i class="bi bi-check-square-fill"></i>
-                        <span>JavaScript DOM Manipulation</span>
-                    </li>
-                    <li>
-                        <i class="bi bi-check-square-fill"></i>
-                        <span>Boolean Logic</span>
-                    </li>
-                </ul>
-                <a href="/app.html" class="btn btn-outline-primary btn-lg">Try it out!</a>
-                <h4>Tech Stack</h4>
-                <div class="techStack">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+    <main class="container p-3">
+        <section id="home" class="hero">
+            <div class="row row-cols-1 row-cols-lg-2 g-3">
+                <div class="col d-flex justify-content-center mb-3">
+                    <img src="/img/Symetrify.svg" class="appLogo mx-auto w-100" />
+                </div>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div>
+                        <h1>Coding Challange</h1>
+                        <!-- ADD APP DESCRIPTION-->
+                        <p class="lead mb-3">Symmetrify is a Palindrome checker. A palindrome is a word, phrase, or sequence that reads the same backwards as foward.</p>
+                        <a href="#app" class="btn btn-primary btn-lg">Try it out!</a>
+                        <a href="#code" class="btn btn-outline-dark btn-lg">View Code</a>
+                    </div>
+
                 </div>
             </div>
-            <div class="col order-first order-md-last d-flex">
-                <img src="/img/APPNAMELogo.svg" class="img-fluid appLogo mx-auto my-auto" alt="APP lOGO" />
+        </section>
+        <hr>
+        <section id="about" class="mt-5">
+            <h3 class="fw-light">Build Using</h3>
+            <div class="techStack mb-2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
             </div>
-        </div>
+            <ul class="checklist">
+                <li>
+                    <i class="bi bi-check-square-fill"></i>
+                    <span>CSS & Bootstrap Layout</span>
+                </li>
+                <li>
+                    <i class="bi bi-check-square-fill"></i>
+                    <span>JavaScript Fundamentals</span>
+                </li>
+                <li>
+                    <i class="bi bi-check-square-fill"></i>
+                    <span>JavaScript Loops</span>
+                </li>
+                <li>
+                    <i class="bi bi-check-square-fill"></i>
+                    <span>JavaScript DOM Manipulation</span>
+                </li>
+                <li>
+                    <i class="bi bi-check-square-fill"></i>
+                    <span>Boolean Logic</span>
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <section id="app" class="mt-5">
+            <h3 class="fw-light">The App</h3>
+            <ol>
+                <li>Enter word, phrase, or sequence.</li>
+                <li>Click "Check It".</li>
+            </ol>
+            <form id="appForm" action="#" class="bg-primary-subtle rounded p-3 mt-4 mb-2">
+                <div class="row row-cols-1 g-3">
+                    <div class="col">
+                        <input id="userString" type="text" aria-label="message" value="Was it a car or a cat I saw?"
+                            class="form-control" />
+                    </div>
+                    <div class="col text-start">
+                        <button onclick="getValues()" type="button" class="btn btn-primary">
+                            Check It
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div id="resultsAlert" role="alert" class="alert d-none">
+                <p id="msg" class="lead mb-0"></p>
+            </div>
+        </section>
+        <hr>
+        <section id="code" class="mt-5">
+            <h3 class="fw-light">The Code</h3>
+            <!-- Overview -->
+            <h4 class="mt-3">Seperation of concerns</h4>
+            <p>The solution to this coding challange is split into three sections, each of which will addreress a
+                seperate
+                concern.</p>
+            <dl class="row mb-0">
+                <dt class="col-md-3">Controller, Logic, View</dt>
+                <dd class="col-md-9">
+                    <p>The <em>Controller</em> function is the entry point for the page, it's responsible for getting
+                        and validating the inputs as well as calling any other functions.</p>
+                    <p>The <em>Logic</em> takes a string, checks if its a palindrome and returns a boolean value.</p>
+                    <p>The <em>View</em> function takes a string with a boolean value and displays an alert on the page.</p>
+                </dd>
+            </dl>
+            <pre class="line-numbers">
+                    <code class="language-js">
+                        //Controller
+                        function getValues()
+
+                        //Business Logic
+                        function isPallindrome(userString)
+
+                        //View
+                        function displayResult(userString ,palindromeBool)
+                    </code>
+            </pre>
+            <!-- Detail on functions -->
+            <h4 class="mt-4">Functions</h4>
+            <div id="getValues" class="mt-4">
+                <dl class="row mb-0">
+                    <dt class="col-sm-3">getValues()</dt>
+                    <dd class="col-sm-9">
+                        <p></p>
+                    </dd>
+                </dl>
+                <pre class="line-numbers mt-0"><code class="language-js">
+                    //Controller
+function getValues() {
+    //Get Inputs From DOM
+    let userString = document.getElementById('userString').value;
+
+    //Check if its a pallindrome
+    let palindromeBool = isPallindrome(userString);
+
+    //Display result on page
+    displayResult(userString, palindromeBool);
+}
+                </code></pre>
+            </div>
+            <div id="isPallindrome" class="mt-4">
+                <dl class="row mb-0">
+                    <dt class="col-sm-3">isPallindrome()</dt>
+                    <dd class="col-sm-9">
+                        <p></p>
+                    </dd>
+                </dl>
+                <pre class="line-numbers mt-0"><code class="language-js">
+                    //Business Logic
+function isPallindrome(userString) {
+
+    //strip userString to raw letters
+    let rawString = userString.toLowerCase();
+    let regx = /[^a-z0-9]/gi;
+    rawString = rawString.replace(regx, "");
+
+    //reverse userString and store into new variable
+    let reversedString = '';
+    for (let index = rawString.length - 1; index >= 0; index--) {
+        reversedString += rawString[index];
+    };
+
+    //compare if two are the same & return result
+    if (rawString == reversedString) {
+        return true;
+    } else {
+        return false;
+    }
+}
+                </code></pre>
+            </div>
+            <div id="displayResult" class="mt-4">
+                <dl class="row mb-0">
+                    <dt class="col-sm-3">displayResult()</dt>
+                    <dd class="col-sm-9">
+                        <p></p>
+                    </dd>
+                </dl>
+                <pre class="line-numbers mt-0"><code class="language-js">
+                    //View
+function displayResult(userString ,palindromeBool) {
+    //Recive a boolean value, display on page
+
+    if (palindromeBool == true) {
+        document.getElementById('msg').innerHTML = `&lt;span class="fw-bold">${userString}&lt;/span> is a Palindrome`;
+        document.getElementById('resultsAlert').classList.add('alert-success');
+    } else {
+        document.getElementById('msg').innerHTML = `&lt;span class="fw-bold">${userString}&lt;/span> is not a Palindrome`;
+        document.getElementById('resultsAlert').classList.add('alert-danger');
+    }
+    document.getElementById('resultsAlert').classList.remove('d-none');
+}
+                </code></pre>
+            </div>
+        </section>
     </main>
 
     <footer class="container-fluid mt-3 footer-main">
@@ -146,6 +289,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Prism JS -->
+    <script src="/js/prism.js"></script>
+    <script>
+        Prism.plugins.NormalizeWhitespace.setDefaults({
+            'remove-trailing': true,
+            'remove-indent': true,
+            'left-trim': true,
+            'right-trim': true
+        })
+    </script>
+
+    <!-- App JS -->
+    <script src="/js/site.js"></script>
 
 </body>
 
