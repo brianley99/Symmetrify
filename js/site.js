@@ -13,8 +13,8 @@ function getValues() {
     } else {
         //Input succesfully validated
 
-        //Check if its a pallindrome
-        let palindromeBool = isPallindrome(userString);
+        //Check if its a palindrome
+        let palindromeBool = isPalindrome(userString);
 
         //Display result on page
         displayResult(userString, palindromeBool);
@@ -22,7 +22,7 @@ function getValues() {
 }
 
 //Business Logic
-function isPallindrome(userString) {
+function isPalindrome(userString) {
 
     //strip userString to raw letters
     let rawString = userString.toLowerCase();

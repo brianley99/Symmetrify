@@ -186,7 +186,9 @@
                 <dl class="row mb-0">
                     <dt class="col-sm-3">getValues()</dt>
                     <dd class="col-sm-9">
-                        <p></p>
+                        <p>Store input from page as <span class="text-primary">userString</span>.</p>
+                        <p>Use <em>isPalindrome</em> function to check if <span class="text-primary">userString</span> is a palindrome and use <em>displayResult</em> function to
+                            display the result as an alert. Only if Input has some text in it.</p>
                     </dd>
                 </dl>
                 <pre class="line-numbers mt-0"><code class="language-js">
@@ -205,7 +207,7 @@ function getValues() {
     } else {
         //Input succesfully validated
 
-        //Check if its a pallindrome
+        //Check if its a palindrome
         let palindromeBool = isPallindrome(userString);
 
         //Display result on page
@@ -218,12 +220,14 @@ function getValues() {
                 <dl class="row mb-0">
                     <dt class="col-sm-3">isPallindrome()</dt>
                     <dd class="col-sm-9">
-                        <p></p>
+                        <p>Take <span class="text-primary">userString</span>.</p>
+                        <p>Create <span class="text-primary">rawString</span> saving it as <span class="text-primary">userString</span> with only letters and numbers, using <em>regx</em>.</p>
+                        <p>Create <span class="text-primary">reversedString</span> saving it as <span class="text-primary">userString</span> but reversed, comparing the two and returning the result. Only if <span class="text-primary">rawString</span> is not empty.</p>
                     </dd>
                 </dl>
                 <pre class="line-numbers mt-0"><code class="language-js">
                     //Business Logic
-function isPallindrome(userString) {
+function isPalindrome(userString) {
 
     //strip userString to raw letters
     let rawString = userString.toLowerCase();
@@ -255,7 +259,8 @@ function isPallindrome(userString) {
                 <dl class="row mb-0">
                     <dt class="col-sm-3">displayResult()</dt>
                     <dd class="col-sm-9">
-                        <p></p>
+                        <p>Take <span class="text-primary">userString</span> and <span class="text-primary">palindromeBool</span>.</p>
+                        <p>Displays an alert to page depending on wether <span class="text-primary">palindromeBool</span> is true or false.</p>
                     </dd>
                 </dl>
                 <pre class="line-numbers mt-0"><code class="language-js">
