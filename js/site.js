@@ -54,11 +54,11 @@ function displayResult(userString ,palindromeBool) {
     //Recive a boolean value, display on page
 
     if (palindromeBool == true) {
-        document.getElementById('msg').innerHTML = `<span class="fw-bold">${userString}</span> is a Palindrome`;
+        document.getElementById('msg').innerHTML = `<span class="fw-bold">${userString}</span><br> is a Palindrome`;
         document.getElementById('resultsAlert').classList.add('alert-success');
         document.getElementById('resultsAlert').classList.remove('d-none', 'alert-danger');
     } else {
-        document.getElementById('msg').innerHTML = `<span class="fw-bold">${userString}</span> is not a Palindrome`;
+        document.getElementById('msg').innerHTML = `<span class="fw-bold">${userString}</span><br> is not a Palindrome`;
         document.getElementById('resultsAlert').classList.add('alert-danger');
         document.getElementById('resultsAlert').classList.remove('d-none', 'alert-success');
     }

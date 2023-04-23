@@ -53,7 +53,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#app">The App</a>
@@ -68,7 +68,7 @@
                             <a class="nav-link" href="https://bley-portfolio.netlify.app/" target="_blank">About</a>
                         </li>
                         <li class="nav-item">
-                            <!-- ADD LINK TO BLOG-->
+                            <!-- TODO: ADD LINK TO BLOG-->
                             <a class="nav-link" href="#" target="_blank">Blog</a>
                         </li>
                     </ul>
@@ -77,68 +77,83 @@
         </nav>
     </header>
 
-    <main class="container p-3">
-        <section id="home" class="hero">
-            <div class="row row-cols-1 row-cols-lg-2 g-3">
-                <div class="col d-flex justify-content-center mb-3">
-                    <img src="/img/Symetrify.svg" class="appLogo mx-auto w-100" />
+    <main>
+        <div id="hero" class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="/img/Symmetrify.svg" class="d-block mx-lg-auto img-fluid rounded" alt="Symmetrify Logo"
+                        width="700" height="500" loading="lazy">
                 </div>
-                <div class="col d-flex justify-content-center align-items-center">
-                    <div>
-                        <h1>Coding Challange</h1>
-                        <!-- ADD APP DESCRIPTION-->
-                        <p class="lead mb-3">Symmetrify is a Palindrome checker. A palindrome is a word, phrase, or sequence that reads the same backwards as foward.</p>
-                        <a href="#app" class="btn btn-primary btn-lg">Try it out!</a>
-                        <a href="#code" class="btn btn-outline-dark btn-lg">View Code</a>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                        Coding Challange</h1>
+                    <p class="lead">Symmetrify is a dynamic web page programmed with JavaScript that checks if a word or phrase is a pallindrome. A pallindrome is same spelled backwards or fowards.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a href="#app" class="btn btn-primary btn-lg px-4 me-md-2">Try it out!</a>
+                        <a href="#code" class="btn btn-outline-secondary btn-lg px-4">View Code</a>
                     </div>
-
                 </div>
             </div>
-        </section>
-        <hr>
-        <section id="about" class="mt-5">
-            <h3 class="fw-light">Build Using</h3>
-            <div class="techStack mb-2">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+        </div>
+        <div class="section-divider"></div>
+        <div id="techStack" class="container px-4 py-5">
+            <h2 class="pb-2 border-bottom">Tech Stack</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-md-2 row-cols-xl-4">
+                <div class="col d-flex align-items-start">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        class="mt-2 me-3" />
+                    <div>
+                        <h3 class="fs-2">JavaScript</h3>
+                        <p>I used JavaScript to create interactive elements, validate user input, and enhance user
+                            experience
+                            through dynamic
+                            content, and functionality.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                        class="mt-2 me-3" />
+                    <div>
+                        <h3 class="fs-2">Bootstrap</h3>
+                        <p>I used Bootstrap to create responsive and mobile-friendly design. Bootstrap provided a
+                            framework
+                            for creating consistent layouts, typography, and UI components.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                        class="mt-2 me-3" />
+                    <div>
+                        <h3 class="fs-2">HTML</h3>
+                        <p>I used HTML to organize text, images, and other
+                            media into a logical and accessible format for users.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                        class="mt-2 me-3" />
+                    <div>
+                        <h3 class="fs-2">CSS</h3>
+                        <p>I used CSS to control the color, typography, and other design elements of HTML content to
+                            create
+                            visually
+                            appealing and consistent user interface.</p>
+                    </div>
+                </div>
             </div>
-            <ul class="checklist">
-                <li>
-                    <i class="bi bi-check-square-fill"></i>
-                    <span>CSS & Bootstrap Layout</span>
-                </li>
-                <li>
-                    <i class="bi bi-check-square-fill"></i>
-                    <span>JavaScript Fundamentals</span>
-                </li>
-                <li>
-                    <i class="bi bi-check-square-fill"></i>
-                    <span>JavaScript Loops</span>
-                </li>
-                <li>
-                    <i class="bi bi-check-square-fill"></i>
-                    <span>JavaScript DOM Manipulation</span>
-                </li>
-                <li>
-                    <i class="bi bi-check-square-fill"></i>
-                    <span>Boolean Logic</span>
-                </li>
-            </ul>
-        </section>
-        <hr>
-        <section id="app" class="mt-5">
-            <h3 class="fw-light">The App</h3>
-            <ol>
-                <li>Enter word, phrase, or sequence.</li>
-                <li>Click "Check It".</li>
-            </ol>
+        </div>
+        <div class="section-divider"></div>
+        <div id="app" class="container px-4 py-5">
+            <h2 class="pb-2 border-bottom">The App</h2>
+
             <form id="appForm" action="#" class="bg-primary-subtle rounded p-3 mt-4 mb-2">
                 <div class="row row-cols-1 g-3">
                     <div class="col">
-                        <input id="userString" type="text" aria-label="message" value="Was it a car or a cat I saw?"
-                            class="form-control" />
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="userString" value="Was it a car or a cat I saw?"
+                                placeholder="Word or Phrase">
+                            <label for="userString">Word or Phrase</label>
+                        </div>
                     </div>
                     <div class="col text-start">
                         <button onclick="getValues()" type="button" class="btn btn-primary">
@@ -147,53 +162,60 @@
                     </div>
                 </div>
             </form>
-            <div id="resultsAlert" role="alert" class="alert d-none">
+            <div id="results">
+                <div id="resultsAlert" role="alert" class="alert d-none text-center rounded shadow p-5">
                 <p id="msg" class="lead mb-0"></p>
             </div>
-        </section>
-        <hr>
-        <section id="code" class="mt-5">
-            <h3 class="fw-light">The Code</h3>
-            <!-- Overview -->
-            <h4 class="mt-3">Seperation of concerns</h4>
+            </div>
+        </div>
+        <div class="section-divider"></div>
+        <div id="code" class="container px-4 py-5">
+
+            <h2 class="pb-2 border-bottom">The Code</h2>
+            <h4 class="pt-2 mt-4">Seperation of concerns</h4>
             <p>The solution to this coding challange is split into three sections, each of which will addreress a
                 seperate
                 concern.</p>
             <dl class="row mb-0">
                 <dt class="col-md-3">Controller, Logic, View</dt>
                 <dd class="col-md-9">
-                    <p>The <em>Controller</em> function is the entry point for the page, it's responsible for getting
-                        and validating the inputs as well as calling any other functions.</p>
-                    <p>The <em>Logic</em> takes a string, checks if its a palindrome and returns a boolean value.</p>
-                    <p>The <em>View</em> function takes a string with a boolean value and displays an alert on the page.</p>
+                    <p>The <em>Controller</em> function is the entry point for the page, it's responsible for
+                        getting
+                        and validating the inputs as well as handling the logic and view functions.</p>
+                    <p>The <em>Logic</em> function is in charge of all the calculations.</p>
+                    <p>The <em>View</em> function formats and displays data to the page.</p>
                 </dd>
             </dl>
-            <pre class="line-numbers">
+            <div class="mx-md-3">
+                <pre class="line-numbers mt-0">
                     <code class="language-js">
                         //Controller
-                        function getValues()
+function getValues()
 
-                        //Business Logic
-                        function isPallindrome(userString)
+//Business Logic
+function isPalindrome(userString)
 
-                        //View
-                        function displayResult(userString ,palindromeBool)
+//View
+function displayResult(userString, palindromeBool)
                     </code>
-            </pre>
-            <!-- Detail on functions -->
-            <h4 class="mt-4">Functions</h4>
-            <div id="getValues" class="mt-4">
+                </pre>
+            </div>
+
+            <h4 class="mt-5">Functions</h4>
+            <!-- TODO: ADD FUNCTIONS DETAILS -->
+            <div id="getValues" class="pt-3 mt-3">
                 <dl class="row mb-0">
-                    <dt class="col-sm-3">getValues()</dt>
-                    <dd class="col-sm-9">
-                        <p>Store input from page as <span class="text-primary">userString</span>.</p>
-                        <p>Use <em>isPalindrome</em> function to check if <span class="text-primary">userString</span> is a palindrome and use <em>displayResult</em> function to
-                            display the result as an alert. Only if Input has some text in it.</p>
+                    <dt class="col-md-3">getValues</dt>
+                    <dd class="col-md-9">
+                        <p>Is called when the user clicks <span class="text-primary">Check It</span>.</p>
+                        <p>Validates user Input</p>
+                        <p>Calls it's borther functions to check input is a pallindrome and displays result on the page.</p>
                     </dd>
                 </dl>
-                <pre class="line-numbers mt-0"><code class="language-js">
-                    //Controller
-function getValues() {
+                <div class="mx-md-3">
+                    <pre class="line-numbers mt-0">
+                        <code class="language-js">
+                            function getValues() {
     //Get Inputs From DOM
     let userString = document.getElementById('userString').value;
 
@@ -208,26 +230,29 @@ function getValues() {
         //Input succesfully validated
 
         //Check if its a palindrome
-        let palindromeBool = isPallindrome(userString);
+        let palindromeBool = isPalindrome(userString);
 
         //Display result on page
         displayResult(userString, palindromeBool);
     };
 }
-                </code></pre>
+                        </code>
+                    </pre>
+                </div>
             </div>
-            <div id="isPallindrome" class="mt-4">
+            <div id="isPalindrome" class="pt-3 mt-5">
                 <dl class="row mb-0">
-                    <dt class="col-sm-3">isPallindrome()</dt>
-                    <dd class="col-sm-9">
-                        <p>Take <span class="text-primary">userString</span>.</p>
-                        <p>Create <span class="text-primary">rawString</span> saving it as <span class="text-primary">userString</span> with only letters and numbers, using <em>regx</em>.</p>
-                        <p>Create <span class="text-primary">reversedString</span> saving it as <span class="text-primary">userString</span> but reversed, comparing the two and returning the result. Only if <span class="text-primary">rawString</span> is not empty.</p>
+                    <dt class="col-md-3">isPalindrome</dt>
+                    <dd class="col-md-9">
+                        <p>Takes <span class="text-primary">userString</span>.</p>
+                        <p>Checks if <span class="userString">userString</span> is a pallindrome.</p>
+                        <p>Returns a boolean result.</p>
                     </dd>
                 </dl>
-                <pre class="line-numbers mt-0"><code class="language-js">
-                    //Business Logic
-function isPalindrome(userString) {
+                <div class="mx-md-3">
+                    <pre class="line-numbers mt-0">
+                        <code class="language-js">
+                            function isPalindrome(userString) {
 
     //strip userString to raw letters
     let rawString = userString.toLowerCase();
@@ -253,38 +278,49 @@ function isPalindrome(userString) {
         };
     };
 }
-                </code></pre>
+                        </code>
+                    </pre>
+                </div>
             </div>
-            <div id="displayResult" class="mt-4">
+            <div id="displayResult" class="pt-3 mt-5">
                 <dl class="row mb-0">
-                    <dt class="col-sm-3">displayResult()</dt>
-                    <dd class="col-sm-9">
-                        <p>Take <span class="text-primary">userString</span> and <span class="text-primary">palindromeBool</span>.</p>
-                        <p>Displays an alert to page depending on wether <span class="text-primary">palindromeBool</span> is true or false.</p>
+                    <dt class="col-md-3">displayResult</dt>
+                    <dd class="col-md-9">
+                        <p>Takes <span class="text-primary">userString</span> and <span class="text-primary">palindromeBool</span>.</p>
+                        <p>Displays result to the page with an alert.</p>
                     </dd>
                 </dl>
-                <pre class="line-numbers mt-0"><code class="language-js">
-                    //View
-function displayResult(userString ,palindromeBool) {
+                <div class="mx-md-3">
+                    <pre class="line-numbers mt-0">
+                        <code class="language-js">
+                            function displayResult(userString ,palindromeBool) {
     //Recive a boolean value, display on page
 
     if (palindromeBool == true) {
-        document.getElementById('msg').innerHTML = `&lt;span class="fw-bold">${userString}&lt;/span> is a Palindrome`;
+        document.getElementById('msg').innerHTML = `<span class="fw-bold">${userString}</span><br> is a Palindrome`;
         document.getElementById('resultsAlert').classList.add('alert-success');
         document.getElementById('resultsAlert').classList.remove('d-none', 'alert-danger');
     } else {
-        document.getElementById('msg').innerHTML = `&lt;span class="fw-bold">${userString}&lt;/span> is not a Palindrome`;
+        document.getElementById('msg').innerHTML = `<span class="fw-bold">${userString}</span><br> is not a Palindrome`;
         document.getElementById('resultsAlert').classList.add('alert-danger');
         document.getElementById('resultsAlert').classList.remove('d-none', 'alert-success');
     }
-    document.getElementById('resultsAlert').classList.remove('d-none');
 }
-                </code></pre>
+                        </code>
+                    </pre>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer class="container-fluid mt-3 footer-main">
+        <div class="row footer-bg-cta">
+            <div class="col">
+                <div class="container py-3 footer-cta text-center">
+                    <a href="https://github.com/brianley99/Symmetrify" class="footer-message">Check out the full code on Github</a>
+                </div>
+            </div>
+        </div>
         <div class="container-xxl">
             <div class="row row-cols-1 row-cols-md-3 gy-3 align-items-center text-center text-light py-3">
                 <div class="col text-md-center">
